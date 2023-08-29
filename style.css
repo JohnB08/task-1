@@ -23,15 +23,20 @@ body {
   filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#696969", endColorstr="#FFFFFF", GradientType=1 );
   /* This gradient I will not take credit for, made through Coolors.co */
   font-family: "Roboto Slab", serif;
+  /* Importing the google font */
   color: #f1f1f1;
   text-shadow: 0 0 2px #2e2e2e;
   border: 4px solid #2e2e2e;
+  /* I think the outlined text just looks neat. */
 }
 #Header {
   display: flex;
   justify-content: center;
   flex-direction: column;
   align-items: center;
+  /* This feels like cheating. I do not understand flexbox at all.
+   Yet after playing through the flexbox-froggy game, I keep trying to use it all over.
+    I try to keep in my head, it's just boxes and grids. */
 }
 h1 {
   background-color: #696969;
@@ -44,16 +49,19 @@ h2 {
   box-shadow: 2px 2px 2px #2e2e2e;
 }
 h3 {
-  background-color: whitesmoke;
+  background-color: rgb(233, 233, 233);
   padding: 5px 20px;
   box-shadow: 2px 2px 2px #2e2e2e;
 }
+/* For this I'm just using a general styling for the three different headers. */
 #Top-Menu {
   margin: 10px 0;
 }
 ul {
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
   list-style: none;
   /* Lists really are a useful way to make buttons. Scrimba was correct. */
 }
@@ -74,24 +82,24 @@ ul {
 }
 #Main-Container {
   display: flex;
-  justify-content: center;
+  flex-wrap: wrap;
+  justify-content: space-around;
 }
 #Left-Side {
-  border-right: 2px solid #2e2e2e;
+  margin: 0;
 }
 #frank-main {
   margin: 10px;
   width: 400px;
   border-radius: 6px;
   box-shadow: 2px 2px 2px #2e2e2e;
-  /* Almost screwed myself here, by using padding instead of margin, just making the box-shadow look weird. */
+  /* Almost screwed myself here, by using padding instead of margin, padding makes the box-shadow look weird. */
 }
 #Right-Side {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 10px;
-  border-left: 2px solid #2e2e2e;
+  padding: 20px;
 }
 .frank {
   margin: 10px;
@@ -100,5 +108,8 @@ ul {
   width: 250px;
 }
 #Footer {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
   border-top: 4px solid #2e2e2e;
 }

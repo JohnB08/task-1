@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Week 1, Task 1</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <!-- Importing a font from google fonts -->
+  </head>
+  <body>
+    <!-- Header -->
+    <div id="Header">
+      <h1>Task 1</h1>
+    </div>
+
+    <!-- top bar -->
+    <div id="Top-Menu">
+      <ul>
+        <li>
+          <button class="top-btn" onclick="window.open('About_me.html');">
+            About Me
+          </button>
+        </li>
+        <li>
+          <button
+            class="top-btn"
+            onclick="window.open('https://en.wikipedia.org/wiki/Chinese_stripe-necked_turtle') "
+          >
+            About Frank
+          </button>
+        </li>
+        <li>
+          <button
+            class="top-btn"
+            onclick="window.open('https://en.wikipedia.org/wiki/Special:Random')"
+          >
+            About something else entirely
+          </button>
+        </li>
+        <li>
+          <button
+            class="top-btn"
+            onclick="window.open('https://en.wikipedia.org/wiki/Nothing')"
+          >
+            About Nothing
+          </button>
+        </li>
+        <!-- Button 1 leads to a dumb joke, the rest to wikipedia articles;
+           the first about the general species in which Frank resides, the second opens a completely random one, the last is self explanatory. -->
+      </ul>
+    </div>
+    <!-- Main Container -->
+    <div id="Main-Container">
+      <!-- Left Side content  -->
+      <div id="Left-Side">
+        <img
+          id="Frank"
+          src="images/frank.jpg"
+          alt="Picture of a turtle, resting below a heatlamp"
+        />
+      </div>
+      <!-- Right side content -->
+      <div id="Right-Side">
+        <h2>Here's Frank</h2>
+        <p id="About-Frank">
+          He was sold as a Mauremys Reevesii turtle, <br />
+          yet close scrutiny has shown he's actually a Mauremys Sinesis. <br />
+          He is supposedly 4 years old, yet his size does tell me he might be
+          older. <br />
+          These facts have no bearing on his day to day existence, however. He
+          is still just a lazy turtle.
+        </p>
+        <img
+          id="frankhead"
+          src="images/frank-head.jpg"
+          alt="Frank's snout is poking out from below floating plants."
+        />
+      </div>
+    </div>
+    <!-- Footer -->
+    <div id="Footer">
+      <h3>
+        This site is made as part of an initial check what knowledge we have.
+      </h3>
+    </div>
+  </body>
+</html>

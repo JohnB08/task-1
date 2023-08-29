@@ -1,0 +1,93 @@
+body {
+  text-align: center;
+  background: hsla(0, 0%, 41%, 1);
+
+  background: linear-gradient(
+    90deg,
+    hsla(0, 0%, 41%, 1) 0%,
+    hsla(0, 0%, 100%, 1) 100%
+  );
+
+  background: -moz-linear-gradient(
+    90deg,
+    hsla(0, 0%, 41%, 1) 0%,
+    hsla(0, 0%, 100%, 1) 100%
+  );
+
+  background: -webkit-linear-gradient(
+    90deg,
+    hsla(0, 0%, 41%, 1) 0%,
+    hsla(0, 0%, 100%, 1) 100%
+  );
+
+  filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#696969", endColorstr="#FFFFFF", GradientType=1 );
+  /* This gradient I will not take credit for, made through Coolors.co */
+  font-family: "Roboto Slab", serif;
+  color: #f1f1f1;
+  text-shadow: 0 0 2px #2e2e2e;
+  border: 4px solid #2e2e2e;
+}
+#Header {
+  display: flex;
+  justify-content: center;
+}
+h1 {
+  background-color: #696969;
+  padding: 5px 40px;
+  box-shadow: 2px 2px 2px #2e2e2e;
+}
+#Top-Menu {
+  margin: 10px 0;
+}
+ul {
+  display: flex;
+  justify-content: space-around;
+  list-style: none;
+  margin: 0;
+  /* Lists really are a useful way to make buttons. Scrimba was correct. */
+}
+.top-btn {
+  border-top: none;
+  border-left: 2px solid #696969;
+  border-right: 2px solid #696969;
+  border-bottom: 2px solid #696969;
+  background-color: inherit;
+  box-shadow: 2px 2px 2px #2e2e2e;
+  font-family: inherit;
+  color: inherit;
+  text-shadow: inherit;
+}
+.top-btn:hover {
+  background-color: #696969;
+  border-color: #f1f1f1;
+}
+#Main-Container {
+  display: flex;
+  justify-content: center;
+}
+#Left-Side {
+  border-right: 2px solid #2e2e2e;
+}
+#Frank {
+  margin: 10px;
+  width: 400px;
+  border-radius: 6px;
+  box-shadow: 2px 2px 2px #2e2e2e;
+  /* Almost screwed myself here, by using padding instead of margin, just making the box-shadow look weird. */
+}
+#Right-Side {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px;
+  border-left: 2px solid #2e2e2e;
+}
+#frankhead {
+  margin: 10px;
+  border-radius: 6px;
+  box-shadow: 2px 2px 2px #2e2e2e;
+  width: 250px;
+}
+#Footer {
+  border-top: 4px solid #2e2e2e;
+}

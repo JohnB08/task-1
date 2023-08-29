@@ -16,7 +16,8 @@
   <body>
     <!-- Header -->
     <div id="Header">
-      <h1>Task 1</h1>
+      <h1>Assignment One</h1>
+      <h3>Initial Test</h3>
     </div>
 
     <!-- top bar -->
@@ -55,19 +56,19 @@
            the first about the general species in which Frank resides, the second opens a completely random one, the last is self explanatory. -->
       </ul>
     </div>
-    <!-- Main Container -->
+    <!-- Main Container, this should house both what's on the left, and right side of the screen. -->
     <div id="Main-Container">
       <!-- Left Side content  -->
       <div id="Left-Side">
         <img
-          id="Frank"
+          id="frank-main"
           src="images/frank.jpg"
           alt="Picture of a turtle, resting below a heatlamp"
         />
       </div>
       <!-- Right side content -->
       <div id="Right-Side">
-        <h2>Here's Frank</h2>
+        <h2>Here's Frank!</h2>
         <p id="About-Frank">
           He was sold as a Mauremys Reevesii turtle, <br />
           yet close scrutiny has shown he's actually a Mauremys Sinesis. <br />
@@ -76,12 +77,21 @@
           These facts have no bearing on his day to day existence, however. He
           is still just a lazy turtle.
         </p>
-        <img
-          id="frankhead"
-          src="images/frank-head.jpg"
-          alt="Frank's snout is poking out from below floating plants."
-        />
+        <div id="imagecontainer">
+          <img
+            class="frank"
+            src="images/frank-head.jpg"
+            alt="Frank's snout is poking out from below floating plants."
+          />
+          <img
+            class="frank"
+            src="images/frank-covered.jpg"
+            alt="Frank, beneath
+          heatlamp, covered in plants."
+          />
+        </div>
       </div>
+      <!-- I might be making too many divs. I need to work on my organizing. -->
     </div>
     <!-- Footer -->
     <div id="Footer">

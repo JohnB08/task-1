@@ -88,6 +88,7 @@ ul {
 #Left-Side {
   margin: 0;
 }
+/* ? Is there a better way to auto-scale images? can you use them as a background-image and autocrop them to a flexbox? */
 #frank-main {
   margin: 10px;
   width: 400px;

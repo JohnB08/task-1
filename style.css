@@ -56,13 +56,14 @@ h3 {
 }
 /* For this I'm just using a general styling for the three different headers. */
 #Top-Menu {
-  margin: 10px 0;
+  margin: 10px 20px 10px 0;
 }
 ul {
   display: flex;
   justify-content: center;
+  align-items: center;
+  gap: 25px;
   flex-wrap: wrap;
-  gap: 20px;
   list-style: none;
   /* Lists really are a useful way to make buttons. Scrimba was correct. */
 }
@@ -87,9 +88,7 @@ ul {
   flex-wrap: wrap;
 }
 #Left-Side {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  text-align: center;
   height: 100%;
   width: 33%;
   object-fit: contain;
@@ -108,8 +107,6 @@ This feels sub-obtimal, but it's the only way I know how to do what I want. */
   display: flex;
   flex-direction: column;
   align-items: center;
-  height: 100%;
-  width: 60%;
   padding: 20px;
 }
 .frank {
@@ -121,6 +118,5 @@ This feels sub-obtimal, but it's the only way I know how to do what I want. */
 #Footer {
   display: flex;
   justify-content: center;
-  flex-wrap: wrap;
   border-top: 4px solid #2e2e2e;
 }

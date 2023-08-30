@@ -28,10 +28,11 @@ body {
   text-shadow: 0 0 2px #2e2e2e;
   border: 4px solid #2e2e2e;
   /* I think the outlined text just looks neat. */
+  margin: 0;
+  padding: 0;
 }
 #Header {
   display: flex;
-  justify-content: center;
   flex-direction: column;
   align-items: center;
   /* This feels like cheating. I do not understand flexbox at all.
@@ -82,16 +83,23 @@ ul {
 }
 #Main-Container {
   display: flex;
+  justify-content: center;
   flex-wrap: wrap;
-  justify-content: space-around;
 }
 #Left-Side {
-  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 33%;
+  object-fit: contain;
 }
-/* ? Is there a better way to auto-scale images? can you use them as a background-image and autocrop them to a flexbox? */
+/* ? Is there a better way to auto-scale images? can you use them as a background-image and autocrop them to a flexbox? 
+My current solution was to determine how much width each box could occupy within the parent before they had to wrap. this seems to scale the images to fit i.e. on a phonescreen.
+This feels sub-obtimal, but it's the only way I know how to do what I want. */
 #frank-main {
   margin: 10px;
-  width: 400px;
+  width: 100%;
   border-radius: 6px;
   box-shadow: 2px 2px 2px #2e2e2e;
   /* Almost screwed myself here, by using padding instead of margin, padding makes the box-shadow look weird. */
@@ -100,6 +108,8 @@ ul {
   display: flex;
   flex-direction: column;
   align-items: center;
+  height: 100%;
+  width: 60%;
   padding: 20px;
 }
 .frank {

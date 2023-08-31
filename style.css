@@ -61,12 +61,14 @@ h3 {
 #Header,
 ul,
 #Main-Container,
-#Right-Side,
-#Footer {
+#Main-Info,
+#Footer,
+#imagecontainer {
   display: flex;
 }
 ul,
-#Footer {
+#Footer,
+#imagecontainer {
   justify-content: center;
 }
 ul {
@@ -74,7 +76,7 @@ ul {
 }
 #Header,
 #Main-Container,
-#Right-Side {
+#Main-Info {
   flex-direction: column;
   align-items: center;
 }
@@ -104,30 +106,31 @@ ul {
 .top-btn:hover {
   border-color: #f1f1f1;
 }
-#Left-Side {
+#Main-Image {
   margin: 0 auto;
   height: 100%;
   width: 40%;
 }
 /* ? Is there a better way to auto-scale images? can you use them as a background-image and autocrop them to a flexbox? 
-My current solution was to determine how much width each box could occupy within the parent before they had to wrap. this seems to scale the images to fit i.e. on a phonescreen.
-This feels sub-obtimal, but it's the only way I know how to do what I want. */
+My current solution is to give each box a % of screen realestate, then make sure each image covers some part of that realestate.
+This feels suboptimal. */
 #frank-main {
-  margin: 10px;
   width: 100%;
   border-radius: 6px;
-  /* Almost screwed myself here, by using padding instead of margin, padding makes the box-shadow look weird. */
 }
-#Right-Side {
+#Main-Info {
   padding: 20px;
+}
+#imagecontainer {
+  width: 60%;
 }
 .frank {
   margin: 10px;
   border-radius: 6px;
-  width: 20%;
+  width: 40%;
 }
 .frank:hover {
-  width: 45%;
+  width: 60%;
 }
 #Footer {
   border-top: 4px solid #2e2e2e;

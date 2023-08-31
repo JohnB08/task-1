@@ -109,7 +109,6 @@ ul {
   margin: 0 auto;
   height: 100%;
   width: 33%;
-  object-fit: contain;
 }
 /* ? Is there a better way to auto-scale images? can you use them as a background-image and autocrop them to a flexbox? 
 My current solution was to determine how much width each box could occupy within the parent before they had to wrap. this seems to scale the images to fit i.e. on a phonescreen.

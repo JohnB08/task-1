@@ -31,39 +31,64 @@ body {
   margin: 0;
   padding: 0;
 }
-#Header {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  /* This feels like cheating. I do not understand flexbox at all.
-   Yet after playing through the flexbox-froggy game, I keep trying to use it all over.
-    I try to keep in my head, it's just boxes and grids. */
+/* common text and content styling */
+h1,
+h2,
+h3,
+.top-btn,
+#frank-main,
+.frank {
+  /* This should hopefully apply the box shadow to everything that wants/needs it */
+  box-shadow: 2px 2px 2px #2e2e2e;
+}
+h1,
+h2,
+.top-btn:hover {
+  background-color: #696969;
 }
 h1 {
-  background-color: #696969;
   padding: 5px 40px;
-  box-shadow: 2px 2px 2px #2e2e2e;
 }
 h2 {
-  background-color: #696969;
   padding: 5px 30px;
-  box-shadow: 2px 2px 2px #2e2e2e;
 }
 h3 {
   background-color: rgb(233, 233, 233);
   padding: 5px 20px;
-  box-shadow: 2px 2px 2px #2e2e2e;
 }
-/* For this I'm just using a general styling for the three different headers. */
+
+/* Display values for the different boxes. */
+#Header,
+ul,
+#Main-Container,
+#Right-Side,
+#Footer {
+  display: flex;
+}
+ul,
+#Main-Container,
+#Footer {
+  justify-content: center;
+}
+ul,
+#Main-Container {
+  flex-wrap: wrap;
+}
+#Header,
+#Right-Side {
+  flex-direction: column;
+  align-items: center;
+}
+/* This feels like cheating. I do not understand flexbox at all.
+   Yet after playing through the flexbox-froggy game, I keep trying to use it all over.
+    I try to keep in my head, it's just boxes and grids. */
+
+/* Individual styling */
 #Top-Menu {
   margin: 10px 20px 10px 0;
 }
 ul {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   gap: 25px;
-  flex-wrap: wrap;
   list-style: none;
   /* Lists really are a useful way to make buttons. Scrimba was correct. */
 }
@@ -73,22 +98,15 @@ ul {
   border-right: 2px solid #696969;
   border-bottom: 2px solid #696969;
   background-color: inherit;
-  box-shadow: 2px 2px 2px #2e2e2e;
   font-family: inherit;
   color: inherit;
   text-shadow: inherit;
 }
 .top-btn:hover {
-  background-color: #696969;
   border-color: #f1f1f1;
 }
-#Main-Container {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-}
 #Left-Side {
-  text-align: center;
+  margin: 0 auto;
   height: 100%;
   width: 33%;
   object-fit: contain;
@@ -100,23 +118,16 @@ This feels sub-obtimal, but it's the only way I know how to do what I want. */
   margin: 10px;
   width: 100%;
   border-radius: 6px;
-  box-shadow: 2px 2px 2px #2e2e2e;
   /* Almost screwed myself here, by using padding instead of margin, padding makes the box-shadow look weird. */
 }
 #Right-Side {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
   padding: 20px;
 }
 .frank {
   margin: 10px;
   border-radius: 6px;
-  box-shadow: 2px 2px 2px #2e2e2e;
   width: 250px;
 }
 #Footer {
-  display: flex;
-  justify-content: center;
   border-top: 4px solid #2e2e2e;
 }
